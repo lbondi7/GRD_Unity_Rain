@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4534019319166607974}
-  - component: {fileID: 4534019319166607975}
+  - component: {fileID: 8119175307356128210}
   - component: {fileID: 4534019319166607969}
   - component: {fileID: 4534019319166607968}
   m_Layer: 0
-  m_Name: Prototype Rain
+  m_Name: Physical Rain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &4534019319166607975
+--- !u!114 &8119175307356128210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,13 +42,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4534019319166607971}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e0767028506704b8920c8467b5b7d5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ad43e500844f924db7f66f073114e70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Shape: 0
   RainSize: 2
-  CloudObject: {fileID: 1848904929688762089, guid: 27a8e8666a7dac84381e76d1cd084ae9, type: 3}
-  SpawnCloud: 1
+  CloudObject: {fileID: 0}
+  SpawnCloud: 0
+  Intensity: 100
+  Lifetime: 30
+  ActiveRange: 15
 --- !u!198 &4534019319166607969
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -132,7 +135,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 30
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -617,13 +620,13 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 50
+    maxNumParticles: 100
     size3D: 0
     rotation3D: 0
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 0.5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -3627,7 +3630,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 4
     type: 1
     collisionMode: 0

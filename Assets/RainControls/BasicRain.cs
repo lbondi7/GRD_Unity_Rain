@@ -20,6 +20,8 @@ public class BasicRain : MonoBehaviour
     public bool SpawnCloud = true;
 
     GameObject cloud;
+    int defaultHeight = 4;
+    protected GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,7 @@ public class BasicRain : MonoBehaviour
         {
             cloud = Instantiate(CloudObject, transform);
         }
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -67,5 +70,13 @@ public class BasicRain : MonoBehaviour
 
         var cloudData = cloud.GetComponent<ParticleSystem>().shape;
         cloudData.radius = RainSize;
+    }
+
+    void RainConfig() 
+    {
+        if (transform.position.y > 0)
+        {
+            transform.position.Set(transform.position.x, defaultHeight, transform.position.z);
+        }
     }
 }
