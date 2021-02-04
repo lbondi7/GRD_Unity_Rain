@@ -36,6 +36,7 @@ public class PhysicalRain : BasicRain
         rainPhysics.enabled = true;
         rain.maxParticles = Intensity;
         rain.startLifetime = Lifetime;
+        rainPhysics.maxKillSpeed = transform.position.y + 3;
         base.OnValidate();
     }
 }
