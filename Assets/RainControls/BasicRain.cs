@@ -39,7 +39,7 @@ public class BasicRain : MonoBehaviour
         
     }
 
-    private void OnValidate()
+    public virtual void OnValidate()
     {
         var rainData = GetComponent<ParticleSystem>().shape;
         switch (Shape)

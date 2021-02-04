@@ -27,7 +27,7 @@ public class PhysicalRain : BasicRain
         }
     }
 
-    private void OnValidate()
+    void OnValidate()
     {
         var rainPhysics = GetComponent<ParticleSystem>().collision;
         var rainTriggers = GetComponent<ParticleSystem>().trigger;
@@ -36,6 +36,6 @@ public class PhysicalRain : BasicRain
         rainPhysics.enabled = true;
         rain.maxParticles = Intensity;
         rain.startLifetime = Lifetime;
-
+        base.OnValidate();
     }
 }
