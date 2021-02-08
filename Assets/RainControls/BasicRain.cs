@@ -26,9 +26,12 @@ public class BasicRain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SpawnCloud)
+        if (CloudObject != null)
         {
-            cloud = Instantiate(CloudObject, transform);
+            if (SpawnCloud)
+            {
+                cloud = Instantiate(CloudObject, transform);
+            }
         }
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -63,13 +66,17 @@ public class BasicRain : MonoBehaviour
 
     void CloudConfig() 
     {
-        if (!cloud.GetComponent<ParticleSystem>())
+        if (cloud != null)
         {
-            return;
+            if (!cloud.GetComponent<ParticleSystem>())
+            {
+                return;
+            }
+            var cloudData = cloud.GetComponent<ParticleSystem>().shape;
+            cloudData.radius = RainSize;
         }
 
-        var cloudData = cloud.GetComponent<ParticleSystem>().shape;
-        cloudData.radius = RainSize;
+
     }
 
     void RainConfig() 
