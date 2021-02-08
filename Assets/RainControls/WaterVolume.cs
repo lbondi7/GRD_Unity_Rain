@@ -2,20 +2,81 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum FillType
+{
+    Timed, //After first rain hits, start to fill
+    Progressive, //As rain hits, fill it up
+
+}
+
+public enum FillSpeed
+{
+    VerySlow,
+    Slow,
+    Normal,
+    Fast,
+    VeryFast
+}
+
 public class WaterVolume : MonoBehaviour
 {
     [Header("Objects")]
     public GameObject WaterPlane;
     public GameObject HeightMarker;
-    public GameObject Log;
+    public List<GameObject> floatables;
     [Header("Behaviour")]
-    [Range(0.1f, 1f)]
-    public float heightIncrement = 0.25f;
+    public FillType fillType = FillType.Progressive;
+    public FillSpeed fillSpeed = FillSpeed.VerySlow;
+
+    bool isActive = false;
+
 
     private void OnParticleCollision(GameObject other)
     {
-        WaterPlane.transform.position = Vector3.MoveTowards(WaterPlane.transform.position, HeightMarker.transform.position, heightIncrement);
-        Log.transform.position = Vector3.MoveTowards(Log.transform.position, HeightMarker.transform.position, heightIncrement);
+        if (isActive)
+        {
+            return;
+        }
+        switch (fillType)
+        {
+            case FillType.Timed:
+                isActive = true;
+                break;
+            case FillType.Progressive:
+                WaterPlane.transform.position = Vector3.MoveTowards(WaterPlane.transform.position, HeightMarker.transform.position, getFillSpeed());
+                raiseFloatables();             
+                break;
+            default:
+                break;
+        }
+
+    }
+
+    void raiseFloatables() 
+    {
+        foreach (GameObject item in floatables)
+        {
+            item.transform.position = Vector3.MoveTowards(item.transform.position, HeightMarker.transform.position, getFillSpeed()); ;
+        }
+    }
+
+    float getFillSpeed() 
+    {
+        switch (fillSpeed)
+        {
+            case FillSpeed.VerySlow:
+                return 0.001f;
+            case FillSpeed.Slow:
+                return 0.01f;
+            case FillSpeed.Normal:
+                return 0.05f;
+            case FillSpeed.Fast:
+                return 0.1f;
+            case FillSpeed.VeryFast:
+                return 0.5f;
+            default:
+                return 1;
+        }
     }
 
 }

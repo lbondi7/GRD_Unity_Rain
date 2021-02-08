@@ -5,12 +5,18 @@ using UnityEngine;
 
 public class RainTrigger : MonoBehaviour
 {
-    private void OnParticleCollision(GameObject other)
+    public GameObject Rain;
+
+    private void Update()
     {
-        print("Beep!");
+        transform.Rotate(0, 0.1f, 0);
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        Rain.SetActive(true);
+        Destroy(gameObject);
+    }
 
 
 }
