@@ -276,6 +276,10 @@ PrefabInstance:
       value: 5.8900003
       objectReference: {fileID: 0}
     - target: {fileID: 2726261018738667063, guid: c423aa5c3af062e4da3b514e030c8f15, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 464
+      objectReference: {fileID: 0}
+    - target: {fileID: 2726261018738667063, guid: c423aa5c3af062e4da3b514e030c8f15, type: 3}
       propertyPath: TriggerModule.primitives.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -848,7 +852,7 @@ MonoBehaviour:
   floatables:
   - {fileID: 590894305}
   fillType: 1
-  fillSpeed: 2
+  fillSpeed: 4
 --- !u!1001 &1124833137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1301,6 +1305,7 @@ GameObject:
   - component: {fileID: 1620598732}
   - component: {fileID: 1620598734}
   - component: {fileID: 1620598733}
+  - component: {fileID: 1620598735}
   m_Layer: 0
   m_Name: WaterLevel
   m_TagString: Untagged
@@ -1371,6 +1376,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620598731}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1620598735
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620598731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.220446e-16, z: 9.999999}
+  m_Center: {x: -0.00000047683716, y: 0, z: 0}
 --- !u!1 &1674231303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1591165099382186, guid: 160a6121b4d25254da31bdab63ad82b7, type: 3}
