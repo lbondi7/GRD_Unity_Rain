@@ -27,6 +27,7 @@ public class WaterVolume : MonoBehaviour
     [Header("Behaviour")]
     public FillType fillType = FillType.Progressive;
     public FillSpeed fillSpeed = FillSpeed.VerySlow;
+    public bool willDrain = false;
 
     bool isActive = false;
 
@@ -85,6 +86,11 @@ public class WaterVolume : MonoBehaviour
         {
             WaterPlane.GetComponent<BoxCollider>().enabled = true;
             WaterPlane.layer = 4;
+        }
+        else
+        {
+            WaterPlane.GetComponent<BoxCollider>().enabled = false;
+            WaterPlane.layer = 1;
         }
     }
 
