@@ -44,7 +44,8 @@ public class WaterVolume : MonoBehaviour
                 break;
             case FillType.Progressive:
                 WaterPlane.transform.position = Vector3.MoveTowards(WaterPlane.transform.position, HeightMarker.transform.position, getFillSpeed());
-                raiseFloatables();             
+                raiseFloatables();
+                checkWaterState();
                 break;
             default:
                 break;
@@ -76,6 +77,14 @@ public class WaterVolume : MonoBehaviour
                 return 0.5f;
             default:
                 return 1;
+        }
+    }
+    void checkWaterState() 
+    {
+        if (Vector3.Distance(WaterPlane.transform.position,HeightMarker.transform.position) < 0.1)
+        {
+            WaterPlane.GetComponent<BoxCollider>().enabled = true;
+            WaterPlane.layer = 4;
         }
     }
 

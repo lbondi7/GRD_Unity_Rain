@@ -852,7 +852,7 @@ MonoBehaviour:
   floatables:
   - {fileID: 590894305}
   fillType: 1
-  fillSpeed: 4
+  fillSpeed: 2
 --- !u!1001 &1124833137
 PrefabInstance:
   m_ObjectHideFlags: 0
