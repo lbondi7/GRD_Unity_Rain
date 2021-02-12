@@ -30,7 +30,16 @@ public class WaterVolume : MonoBehaviour
     public bool willDrain = false;
 
     bool isActive = false;
+    Vector3 startingPos;
 
+    private void Awake()
+    {
+        startingPos = WaterPlane.transform.position;
+        if (willDrain)
+        {
+            InvokeRepeating("drain", 1f, 1f);
+        }
+    }
 
     private void OnParticleCollision(GameObject other)
     {
@@ -67,15 +76,34 @@ public class WaterVolume : MonoBehaviour
         switch (fillSpeed)
         {
             case FillSpeed.VerySlow:
-                return 0.001f;
+                return 0.0001f;
             case FillSpeed.Slow:
-                return 0.01f;
+                return 0.001f;
             case FillSpeed.Normal:
-                return 0.05f;
+                return 0.005f;
             case FillSpeed.Fast:
-                return 0.1f;
+                return 0.01f;
             case FillSpeed.VeryFast:
-                return 0.5f;
+                return 0.05f;
+            default:
+                return 1;
+        }
+    }
+
+    float getDrainSpeed() 
+    {
+        switch (fillSpeed)
+        {
+            case FillSpeed.VerySlow:
+                return 0.0005f;
+            case FillSpeed.Slow:
+                return 0.005f;
+            case FillSpeed.Normal:
+                return 0.001f;
+            case FillSpeed.Fast:
+                return 0.01f;
+            case FillSpeed.VeryFast:
+                return 0.05f;
             default:
                 return 1;
         }
@@ -92,6 +120,11 @@ public class WaterVolume : MonoBehaviour
             WaterPlane.GetComponent<BoxCollider>().enabled = false;
             WaterPlane.layer = 1;
         }
+    }
+
+    void drain() 
+    {
+        WaterPlane.transform.position = Vector3.MoveTowards(startingPos, WaterPlane.transform.position, getDrainSpeed());
     }
 
 }

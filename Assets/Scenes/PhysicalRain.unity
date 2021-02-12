@@ -853,6 +853,7 @@ MonoBehaviour:
   - {fileID: 590894305}
   fillType: 1
   fillSpeed: 2
+  willDrain: 0
 --- !u!1001 &1124833137
 PrefabInstance:
   m_ObjectHideFlags: 0
