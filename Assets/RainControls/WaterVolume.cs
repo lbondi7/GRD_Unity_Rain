@@ -24,6 +24,7 @@ public class WaterVolume : MonoBehaviour
     public GameObject WaterPlane;
     public GameObject HeightMarker;
     public List<GameObject> floatables;
+    public ParticleSystem RainSource;
     [Header("Behaviour")]
     public FillType fillType = FillType.Progressive;
     public FillSpeed fillSpeed = FillSpeed.VerySlow;
@@ -31,14 +32,11 @@ public class WaterVolume : MonoBehaviour
 
     bool isActive = false;
     Vector3 startingPos;
+    bool isFull = false;
 
     private void Awake()
     {
         startingPos = WaterPlane.transform.position;
-        if (willDrain)
-        {
-            InvokeRepeating("drain", 1f, 1f);
-        }
     }
 
     private void OnParticleCollision(GameObject other)
@@ -61,6 +59,14 @@ public class WaterVolume : MonoBehaviour
                 break;
         }
 
+    }
+
+    private void Update()
+    {
+        if (!RainSource.gameObject.activeSelf && willDrain)
+        {
+            drain();
+        }
     }
 
     void raiseFloatables() 
@@ -114,6 +120,7 @@ public class WaterVolume : MonoBehaviour
         {
             WaterPlane.GetComponent<BoxCollider>().enabled = true;
             WaterPlane.layer = 4;
+            isFull = true;
         }
         else
         {
@@ -125,6 +132,11 @@ public class WaterVolume : MonoBehaviour
     void drain() 
     {
         WaterPlane.transform.position = Vector3.MoveTowards(startingPos, WaterPlane.transform.position, getDrainSpeed());
+
+        if (Vector3.Distance(WaterPlane.transform.position, startingPos) < 0.1)
+        {
+            isFull = false;
+        }
     }
 
 }

@@ -14,7 +14,7 @@ public class RainTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Rain.SetActive(true);
+        Rain.SetActive(!Rain.activeSelf);
         Destroy(gameObject);
     }
 
