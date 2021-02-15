@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{4b5d37bb-7c4e-48ad-8bc2-b5f7d4c1ae3a}">
+		<property name="assetPath">
+			<value>Hard Rain loopable.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>31.440680272108843</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59b6324f-11e1-40bf-8bcc-4ae4b147a3ba}</destination>
+		</relationship>
+	</object>
+</objects>
