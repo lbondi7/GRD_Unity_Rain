@@ -2,11 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RainTrigger : MonoBehaviour
 {
-    public GameObject indicator;
-    private void OnParticleCollision(GameObject other)
+    public GameObject Rain;
+
+    private void Update()
     {
-        print("Collided!");
+        transform.Rotate(0, 0.1f, 0);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Rain.SetActive(!Rain.activeSelf);
+        Destroy(gameObject);
+    }
+
+
 }
