@@ -37,6 +37,10 @@ public class WaterVolume : MonoBehaviour
     private void Awake()
     {
         startingPos = WaterPlane.transform.position;
+        if (willDrain)
+        {
+            InvokeRepeating("drain", 1, 1);
+        }
     }
 
     private void OnParticleCollision(GameObject other)
@@ -63,7 +67,7 @@ public class WaterVolume : MonoBehaviour
 
     private void Update()
     {
-        if (!RainSource.gameObject.activeSelf && willDrain)
+        if (isFull && willDrain)
         {
             drain();
         }
@@ -131,8 +135,11 @@ public class WaterVolume : MonoBehaviour
 
     void drain() 
     {
+        if (!isFull)
+        {
+            return;
+        }
         WaterPlane.transform.position = Vector3.MoveTowards(startingPos, WaterPlane.transform.position, getDrainSpeed());
-
         if (Vector3.Distance(WaterPlane.transform.position, startingPos) < 0.1)
         {
             isFull = false;
