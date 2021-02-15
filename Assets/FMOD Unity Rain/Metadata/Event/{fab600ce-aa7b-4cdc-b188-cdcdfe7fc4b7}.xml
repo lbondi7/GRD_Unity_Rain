@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{fab600ce-aa7b-4cdc-b188-cdcdfe7fc4b7}">
 		<property name="name">
-			<value>Droplets</value>
+			<value>Wood</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{98b3cec8-43a5-48ae-848c-ccf7b327a396}</destination>
+			<destination>{f3a14834-bc8c-4a6d-8c0f-5e4fd7605ea4}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{ef569159-ccc5-40db-9777-55b570b0e48d}</destination>
@@ -32,7 +32,6 @@
 			<destination>{c2d1be2a-7bc1-4a91-b767-3a051de38865}</destination>
 		</relationship>
 		<relationship name="parameters">
-			<destination>{71e61b2d-62b1-4236-aa16-b2be771113f5}</destination>
 			<destination>{b25d985d-a7cf-450a-8b18-10817ae8194f}</destination>
 		</relationship>
 		<relationship name="banks">
@@ -60,26 +59,25 @@
 			<destination>{0eae1899-bad5-4a69-8884-1e3a963df21f}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{622d2abd-3b82-4d6f-bde4-3574f706c244}</destination>
+			<destination>{aab96846-5625-4501-b3a7-09914c43aa09}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{4186c900-a436-4319-bb05-3618a0fab079}" />
 	<object class="MarkerTrack" id="{1a73ff2e-81bf-4397-9b48-36db19a41ebd}" />
 	<object class="GroupTrack" id="{2ca150e4-9c6d-4f2a-9928-d544c3b05402}">
 		<relationship name="modules">
-			<destination>{6ae94e4d-594f-412a-814e-65056e8b79de}</destination>
+			<destination>{15543417-d35c-4b95-b5fc-611870de0118}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{ce3973f9-1981-4021-9014-5d0802ea4b68}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{c2d1be2a-7bc1-4a91-b767-3a051de38865}" />
-	<object class="ParameterProxy" id="{71e61b2d-62b1-4236-aa16-b2be771113f5}">
+	<object class="Timeline" id="{c2d1be2a-7bc1-4a91-b767-3a051de38865}">
 		<relationship name="modules">
-			<destination>{6ae94e4d-594f-412a-814e-65056e8b79de}</destination>
+			<destination>{15543417-d35c-4b95-b5fc-611870de0118}</destination>
 		</relationship>
-		<relationship name="preset">
-			<destination>{dc6fd66c-1e2c-4fe0-a3c6-dab52e6fe7a0}</destination>
+		<relationship name="markers">
+			<destination>{46c1f9dd-2cbf-430c-a9b1-cab0e1efed62}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{b25d985d-a7cf-450a-8b18-10817ae8194f}">
@@ -112,9 +110,9 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{0eae1899-bad5-4a69-8884-1e3a963df21f}" />
-	<object class="SingleSound" id="{6ae94e4d-594f-412a-814e-65056e8b79de}">
-		<property name="looping">
-			<value>true</value>
+	<object class="SingleSound" id="{15543417-d35c-4b95-b5fc-611870de0118}">
+		<property name="length">
+			<value>11.321927437641722</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{cb4cb975-4fc1-4020-947f-a47b4f7a0e0e}</destination>
@@ -132,6 +130,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{4770dd9a-4d02-4907-9eff-fe46d7496038}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{46c1f9dd-2cbf-430c-a9b1-cab0e1efed62}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>11.321927437641722</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{c2d1be2a-7bc1-4a91-b767-3a051de38865}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{1a73ff2e-81bf-4397-9b48-36db19a41ebd}</destination>
 		</relationship>
 	</object>
 	<object class="Automator" id="{eb8e1fdf-bba3-425d-a128-4f902ab4746a}">
@@ -205,7 +217,7 @@
 			<value>2.9983579638752054</value>
 		</property>
 		<property name="value">
-			<value>-1</value>
+			<value>5</value>
 		</property>
 	</object>
 </objects>
