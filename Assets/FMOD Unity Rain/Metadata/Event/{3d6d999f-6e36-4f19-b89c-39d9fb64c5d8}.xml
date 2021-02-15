@@ -27,6 +27,7 @@
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{d167b5b5-d6d9-4cbb-a4cf-01d5786f7000}</destination>
+			<destination>{fb920d28-02c2-4414-83e0-710e7b72ec85}</destination>
 		</relationship>
 		<relationship name="timeline">
 			<destination>{743fc0a9-c932-4222-8353-9a5eff839d4d}</destination>
@@ -72,6 +73,14 @@
 			<destination>{2263e4aa-15f1-4e5f-81c6-316aa76d7f24}</destination>
 		</relationship>
 	</object>
+	<object class="GroupTrack" id="{fb920d28-02c2-4414-83e0-710e7b72ec85}">
+		<relationship name="modules">
+			<destination>{53ac595e-f6ff-4806-a97c-7b1a2c5a7433}</destination>
+		</relationship>
+		<relationship name="mixerGroup">
+			<destination>{fad098ed-ab63-4ddd-81ca-d882ef5d5d29}</destination>
+		</relationship>
+	</object>
 	<object class="Timeline" id="{743fc0a9-c932-4222-8353-9a5eff839d4d}">
 		<relationship name="markers">
 			<destination>{b7b25d53-869e-4ea7-8bee-6371e8169615}</destination>
@@ -80,6 +89,7 @@
 	<object class="ParameterProxy" id="{ca4dbba4-38e7-4327-8883-1acd052232d1}">
 		<relationship name="modules">
 			<destination>{6f7114d8-b722-4a55-8c1d-dc47074d8f66}</destination>
+			<destination>{53ac595e-f6ff-4806-a97c-7b1a2c5a7433}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{7c76d737-79b2-4db3-a3b3-ac65c4a4e3c7}</destination>
@@ -132,6 +142,31 @@
 			<destination>{f1b6ea3e-a570-4cb8-b189-d46ef4d508e6}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{53ac595e-f6ff-4806-a97c-7b1a2c5a7433}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{c8a738d0-bc09-4140-98b2-f0a9c8e205ff}</destination>
+		</relationship>
+	</object>
+	<object class="EventMixerGroup" id="{fad098ed-ab63-4ddd-81ca-d882ef5d5d29}">
+		<property name="volume">
+			<value>-28</value>
+		</property>
+		<property name="name">
+			<value>Audio 2</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{6d3d28bd-694c-4af1-beff-d31623d5b0fa}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{8e4dba30-3030-49d7-afae-5d41707946ac}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{f1b6ea3e-a570-4cb8-b189-d46ef4d508e6}</destination>
+		</relationship>
+	</object>
 	<object class="LoopRegion" id="{b7b25d53-869e-4ea7-8bee-6371e8169615}">
 		<property name="position">
 			<value>0</value>
@@ -168,6 +203,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{108bd1ad-89d2-497f-8a85-868d88e50a12}" />
+	<object class="MixerBusEffectChain" id="{6d3d28bd-694c-4af1-beff-d31623d5b0fa}">
+		<relationship name="effects">
+			<destination>{ef8d15ff-8fb2-4260-9bc5-6b0e6c29174b}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{8e4dba30-3030-49d7-afae-5d41707946ac}" />
 	<object class="MixerBusFader" id="{162a4b8c-641b-4b70-a380-99776e4e76c1}" />
 	<object class="SpatialiserEffect" id="{80e3f0cd-836c-4e8e-adcc-cb8456f9dac6}">
 		<property name="minimumDistance">
@@ -181,9 +222,11 @@
 		<relationship name="automationPoints">
 			<destination>{de015605-c967-4a52-95d4-871e9967b85d}</destination>
 			<destination>{33e7be95-9dd0-41ca-8fca-832947231175}</destination>
+			<destination>{0099876b-2877-4b0c-a9e5-6b71c9ed34a7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{00bcf7e2-b16e-4d65-8e39-ceead99430e6}" />
+	<object class="MixerBusFader" id="{ef8d15ff-8fb2-4260-9bc5-6b0e6c29174b}" />
 	<object class="AutomationPoint" id="{de015605-c967-4a52-95d4-871e9967b85d}">
 		<property name="position">
 			<value>0</value>
@@ -198,6 +241,17 @@
 	<object class="AutomationPoint" id="{33e7be95-9dd0-41ca-8fca-832947231175}">
 		<property name="position">
 			<value>4</value>
+		</property>
+		<property name="value">
+			<value>100</value>
+		</property>
+		<property name="curveShape">
+			<value>0.223192394</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{0099876b-2877-4b0c-a9e5-6b71c9ed34a7}">
+		<property name="position">
+			<value>7</value>
 		</property>
 		<property name="value">
 			<value>0</value>
