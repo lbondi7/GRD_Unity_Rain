@@ -76,6 +76,7 @@ public class PhysicalRain : BasicRain
         {
             other.gameObject.GetComponent<PlayerControls>().amWet = true;
             other.gameObject.GetComponent<PlayerControls>().speedModifier = SpeedReduction;
+            other.GetComponent<PlayerControls>().getPlayerCam().cullingMask += (1 << LayerMask.NameToLayer("Waterlogged"));
         }
     }
 
@@ -85,6 +86,7 @@ public class PhysicalRain : BasicRain
         {
             other.gameObject.GetComponent<PlayerControls>().amWet = false;
             other.gameObject.GetComponent<PlayerControls>().speedModifier = 1;
+            other.GetComponent<PlayerControls>().getPlayerCam().cullingMask = ~(1 << LayerMask.NameToLayer("Waterlogged"));
         }
     }
 

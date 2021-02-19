@@ -76,5 +76,10 @@ public class PlayerControls : MonoBehaviour
         }
     }
 
+    public Camera getPlayerCam() 
+    {
+        return playerCameraObj.GetComponent<Camera>();
+    }
+
 
 }
