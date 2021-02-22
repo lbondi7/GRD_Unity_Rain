@@ -42,7 +42,7 @@
 			<value>volume</value>
 		</property>
 		<property name="value">
-			<value>-10</value>
+			<value>-4.5</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{4c123ebc-04ff-4d43-822b-b5d7ff696058}</destination>
@@ -53,7 +53,7 @@
 			<value>volume</value>
 		</property>
 		<property name="value">
-			<value>-10</value>
+			<value>-4.5</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{622d2abd-3b82-4d6f-bde4-3574f706c244}</destination>

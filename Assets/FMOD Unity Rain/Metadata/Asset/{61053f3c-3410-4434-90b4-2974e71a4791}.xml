@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EncodableAsset" id="{61053f3c-3410-4434-90b4-2974e71a4791}">
+		<property name="assetPath">
+			<value>Drip/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59b6324f-11e1-40bf-8bcc-4ae4b147a3ba}</destination>
+		</relationship>
+	</object>
+</objects>
