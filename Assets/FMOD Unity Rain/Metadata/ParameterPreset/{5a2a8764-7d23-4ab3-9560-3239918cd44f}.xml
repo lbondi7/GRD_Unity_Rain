@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{5a2a8764-7d23-4ab3-9560-3239918cd44f}">
+		<property name="name">
+			<value>Thickness</value>
+		</property>
+		<relationship name="folder">
+			<destination>{84466e39-d05d-4c2f-b603-d6d0931976a5}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{eaba5506-bf1b-4f28-bb07-5b7892fc2394}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{eaba5506-bf1b-4f28-bb07-5b7892fc2394}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -25,13 +25,15 @@
 			<destination>{6eafb70d-28c0-41bb-91d5-019c64520646}</destination>
 			<destination>{d2c45d6a-846c-45f6-8bee-e26edcd0d4e2}</destination>
 			<destination>{70517783-9249-44fd-a98a-89002c91870a}</destination>
+			<destination>{03158df8-aa03-4932-834a-6026f20a0cff}</destination>
+			<destination>{7b772948-2504-4d52-a0f8-fe896ff11ed3}</destination>
 		</relationship>
 	</object>
 	<object class="MarkerTrack" id="{5cca2b36-a952-4c1a-93fa-aa75007905f4}" />
 	<object class="Timeline" id="{6f63c1c1-f6a9-4e9f-bb07-31b4c9894e90}" />
 	<object class="SandboxParameter" id="{2b660dd3-d91e-45af-b838-f0ef053429a4}">
 		<property name="parameterValue">
-			<value>1</value>
+			<value>3</value>
 		</property>
 		<relationship name="parameter">
 			<destination>{8c7c9ee3-b6f6-4ed5-bdb7-1f5161c553ba}</destination>
@@ -39,13 +41,13 @@
 	</object>
 	<object class="SandboxListener" id="{027d0754-29a4-49cf-b32d-b750a7f19d97}">
 		<property name="positionX">
-			<value>1.90918887</value>
+			<value>0.259188801</value>
 		</property>
 		<property name="positionZ">
-			<value>8.98025513</value>
+			<value>2.38025475</value>
 		</property>
 		<property name="rotationY">
-			<value>153.758102</value>
+			<value>-0.835671067</value>
 		</property>
 	</object>
 	<object class="SandboxEmitter" id="{f95afeb8-b407-45c5-affc-8bf62a520457}">
@@ -107,6 +109,28 @@
 		</property>
 		<relationship name="event">
 			<destination>{9d1ad3b8-da81-4e75-aaee-c3f37159775c}</destination>
+		</relationship>
+	</object>
+	<object class="SandboxEmitter" id="{03158df8-aa03-4932-834a-6026f20a0cff}">
+		<property name="positionX">
+			<value>-0.0500000007</value>
+		</property>
+		<property name="positionZ">
+			<value>4.55000019</value>
+		</property>
+		<relationship name="event">
+			<destination>{fab600ce-aa7b-4cdc-b188-cdcdfe7fc4b7}</destination>
+		</relationship>
+	</object>
+	<object class="SandboxEmitter" id="{7b772948-2504-4d52-a0f8-fe896ff11ed3}">
+		<property name="positionX">
+			<value>4.05000019</value>
+		</property>
+		<property name="positionZ">
+			<value>2.25</value>
+		</property>
+		<relationship name="event">
+			<destination>{f03d0411-6fc0-468a-a2c6-65c54aae1d22}</destination>
 		</relationship>
 	</object>
 </objects>
