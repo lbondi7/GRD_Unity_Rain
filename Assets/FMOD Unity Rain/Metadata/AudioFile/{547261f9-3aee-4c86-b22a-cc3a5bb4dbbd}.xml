@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{547261f9-3aee-4c86-b22a-cc3a5bb4dbbd}">
+		<property name="assetPath">
+			<value>Medium wood heavy 03.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.35277083333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59b6324f-11e1-40bf-8bcc-4ae4b147a3ba}</destination>
+		</relationship>
+	</object>
+</objects>
