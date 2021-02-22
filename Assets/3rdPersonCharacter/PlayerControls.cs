@@ -9,9 +9,13 @@ public class PlayerControls : MonoBehaviour
     Vector2 look;
     Animator playerAnimator;
     GameObject playerCameraObj;
+
     public Transform playerRoot;
 
+    public bool amWet;
+    public float speedModifier = 1;
     bool amCrouching = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +33,17 @@ public class PlayerControls : MonoBehaviour
     {
         playerCameraObj.transform.RotateAround
             (playerRoot.position, Vector3.up, look.x / 1.5f);
-        playerAnimator.SetFloat("Turn", move.x);
-        playerAnimator.SetFloat("Forward", move.y);
+        if (amWet)
+        {
+            playerAnimator.SetFloat("Turn", move.x * speedModifier);
+            playerAnimator.SetFloat("Forward", move.y * speedModifier);
+        }
+        else
+        {
+            playerAnimator.SetFloat("Turn", move.x);
+            playerAnimator.SetFloat("Forward", move.y);
+        }
+
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -61,6 +74,11 @@ public class PlayerControls : MonoBehaviour
         {
             playerAnimator.SetBool("Crouch", false);
         }
+    }
+
+    public Camera getPlayerCam() 
+    {
+        return playerCameraObj.GetComponent<Camera>();
     }
 
 
