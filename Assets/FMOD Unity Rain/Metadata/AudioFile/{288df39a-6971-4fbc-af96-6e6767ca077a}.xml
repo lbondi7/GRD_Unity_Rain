@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{288df39a-6971-4fbc-af96-6e6767ca077a}">
 		<property name="assetPath">
-			<value>Medium wood light 10.wav</value>
+			<value>Drip/Wood/Medium wood light 10.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

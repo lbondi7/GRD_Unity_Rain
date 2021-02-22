@@ -64,7 +64,7 @@
 			<destination>{0eae1899-bad5-4a69-8884-1e3a963df21f}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{aab96846-5625-4501-b3a7-09914c43aa09}</destination>
+			<destination>{ed9a9520-7624-4dcb-9f59-965747ebc735}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{4186c900-a436-4319-bb05-3618a0fab079}" />
@@ -176,9 +176,6 @@
 		</relationship>
 	</object>
 	<object class="SoundScatterer" id="{031b6e15-09d3-43a4-af7f-ef160a093404}">
-		<property name="start">
-			<value>0.10000000000000001</value>
-		</property>
 		<property name="length">
 			<value>0.10000000000000001</value>
 		</property>
@@ -209,7 +206,7 @@
 	</object>
 	<object class="SoundScatterer" id="{21380f94-d1b9-4155-9963-273638a7d847}">
 		<property name="start">
-			<value>0.20000000000000001</value>
+			<value>0.10000000000000001</value>
 		</property>
 		<property name="length">
 			<value>0.10000000000000001</value>
@@ -241,7 +238,7 @@
 	</object>
 	<object class="SoundScatterer" id="{f805b1d7-b860-4ec0-bddd-172e2b4816e9}">
 		<property name="start">
-			<value>0.30000000000000004</value>
+			<value>0.20000000000000007</value>
 		</property>
 		<property name="length">
 			<value>0.10000000000000001</value>
@@ -279,10 +276,10 @@
 			<value>0.59999999999999987</value>
 		</property>
 		<property name="length">
-			<value>0.40000000000000002</value>
+			<value>0.40000000000000013</value>
 		</property>
 		<property name="volume">
-			<value>-0.5</value>
+			<value>3.5</value>
 		</property>
 		<property name="minimumTimeBetweenSounds">
 			<value>72</value>
@@ -315,9 +312,6 @@
 		</property>
 		<property name="length">
 			<value>0.24999999999999994</value>
-		</property>
-		<property name="volume">
-			<value>-4</value>
 		</property>
 		<property name="minimumTimeBetweenSounds">
 			<value>72</value>
@@ -372,9 +366,6 @@
 		</relationship>
 	</object>
 	<object class="SoundScatterer" id="{c3251189-2964-4002-a9a3-a6bb52c465e6}">
-		<property name="start">
-			<value>0.10000000000000001</value>
-		</property>
 		<property name="length">
 			<value>0.10000000000000001</value>
 		</property>
@@ -402,7 +393,7 @@
 	</object>
 	<object class="SoundScatterer" id="{a2900b38-e415-4f32-8272-9411eaca1311}">
 		<property name="start">
-			<value>0.30000000000000004</value>
+			<value>0.20000000000000007</value>
 		</property>
 		<property name="length">
 			<value>0.10000000000000001</value>
@@ -434,7 +425,7 @@
 	</object>
 	<object class="SoundScatterer" id="{e3a0c3e5-ebd3-46d2-9523-2a4cbf952d57}">
 		<property name="start">
-			<value>0.20000000000000001</value>
+			<value>0.10000000000000001</value>
 		</property>
 		<property name="length">
 			<value>0.10000000000000001</value>
