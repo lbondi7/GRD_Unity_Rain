@@ -8,7 +8,7 @@
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{f3a14834-bc8c-4a6d-8c0f-5e4fd7605ea4}</destination>
+			<destination>{c73451c6-7abc-4b46-bca5-6a8b906ed1fa}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{056fd3ad-3015-40c5-94d8-4c27f44efb56}</destination>
@@ -67,7 +67,11 @@
 			<destination>{aab96846-5625-4501-b3a7-09914c43aa09}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{94e6f65f-6401-49ad-a576-64cc1b95e822}" />
+	<object class="EventAutomatableProperties" id="{94e6f65f-6401-49ad-a576-64cc1b95e822}">
+		<property name="maxVoices">
+			<value>20</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{dfac35aa-6d6a-41dd-8511-88c526ca3ea3}" />
 	<object class="GroupTrack" id="{f087fa7d-a5bb-4802-82db-cb79f009649f}">
 		<relationship name="automationTracks">
