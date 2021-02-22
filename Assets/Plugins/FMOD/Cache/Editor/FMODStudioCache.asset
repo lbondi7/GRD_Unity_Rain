@@ -1,0 +1,348 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8571349928691919517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Outdoors
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Outdoors
+  guid: 165004f830d4cc4c9d272ce60a725a42
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8502659362231229271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Strength
+  m_EditorClassIdentifier: 
+  Name: Strength
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 3482860566
+    data2: 1567035890
+  Exists: 1
+--- !u!114 &-6276277504794675559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Indoors
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Indoors
+  guid: fc72f9b8b35e8640a7123f9eae6767ba
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-4742780527477706359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rain/Rainfall
+  m_EditorClassIdentifier: 
+  Path: event:/Rain/Rainfall
+  guid: cd61c29bf96abd4f87fdb57fc81138b6
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 38000
+--- !u!114 &-3883865091870271281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Unity Rain/Build/Desktop/Master.bank
+  Name: Master
+  lastModified: 637490769890288137
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2841371896211895645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rain/Impacts/Wood
+  m_EditorClassIdentifier: 
+  Path: event:/Rain/Impacts/Wood
+  guid: ce00b6fa7baadc4cb188cdcdfe7fc4b7
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11321
+--- !u!114 &-2749844136692478054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Cover
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Cover
+  guid: d523523af2429340819515f3d8dc4b5b
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-566611941021671320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Zones/Indoors
+  m_EditorClassIdentifier: 
+  Path: event:/Zones/Indoors
+  guid: 5ce4ceae6c29cb40b6f0b76967523b74
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-245745934429976784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Zones/Cover
+  m_EditorClassIdentifier: 
+  Path: event:/Zones/Cover
+  guid: 9f996d3d366e194fb89c39d9fb64c5d8
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 5
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 3289305363498789325}
+  - {fileID: -3883865091870271281}
+  EditorEvents:
+  - {fileID: -8571349928691919517}
+  - {fileID: -566611941021671320}
+  - {fileID: 4603950992326781188}
+  - {fileID: -245745934429976784}
+  - {fileID: 6031870937234174272}
+  - {fileID: 4011093701285190533}
+  - {fileID: -4742780527477706359}
+  - {fileID: -2841371896211895645}
+  - {fileID: -2749844136692478054}
+  - {fileID: -6276277504794675559}
+  - {fileID: 2347572495876202908}
+  EditorParameters:
+  - {fileID: -8502659362231229271}
+  MasterBanks:
+  - {fileID: -3883865091870271281}
+  StringsBanks:
+  - {fileID: 3289305363498789325}
+  stringsBankWriteTime: 637490769890338006
+  cacheVersion: 5
+--- !u!114 &2347572495876202908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rain/Rainfall 2d
+  m_EditorClassIdentifier: 
+  Path: event:/Rain/Rainfall 2d
+  guid: 11043df0c06f8a46a2c665c54aae1d22
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 40000
+--- !u!114 &3289305363498789325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Unity Rain/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  lastModified: 637490769890338006
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1480
+  Exists: 1
+--- !u!114 &4011093701285190533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rain/Hiss
+  m_EditorClassIdentifier: 
+  Path: event:/Rain/Hiss
+  guid: b8d31a9d81da754eaaeec3f37159775c
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10373
+--- !u!114 &4603950992326781188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rain/Impacts/Water
+  m_EditorClassIdentifier: 
+  Path: event:/Rain/Impacts/Water
+  guid: 6fc2a71376f0dd40b9f4c32a45d6ccdb
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12500
+--- !u!114 &6031870937234174272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Zones/Outdoors
+  m_EditorClassIdentifier: 
+  Path: event:/Zones/Outdoors
+  guid: a858f3e98e0daa488f0f892bf049bec6
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
