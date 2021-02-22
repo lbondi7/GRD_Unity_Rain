@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f61d5339-50c3-40cc-af8a-a5f4bd901f46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterial/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterial/Materials/IceMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterial/Materials/IceMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CheckMaterial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CheckMaterial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DropletAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DropletAudio.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PhysicsMaterial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PhysicsMaterial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +19,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/6b/36315a65/ScriptableRuntimeReflectionSystemWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/07/3c354731/RenderPipelineManager.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/CheckMaterial.cs" />
+        <option value="$PROJECT_DIR$/Assets/DropletAudio.cs" />
       </list>
     </option>
   </component>
@@ -37,10 +46,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7400">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15396">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="7400" />
+      <option name="pid" value="15396" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -65,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614013820926</updated>
       <workItem from="1614013821805" duration="4930000" />
+      <workItem from="1614028928878" duration="1245000" />
     </task>
     <servers />
   </component>
@@ -145,5 +155,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="375" key="GridCell.Tab.3.right/1920.0.1920.1040/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1614028696756" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Plugins/FMOD/src/Runtime/RuntimeManager.cs</url>
+          <line>936</line>
+          <properties documentPath="C:\Users\lbondi7\source\repos\GRD_Unity_Rain\Assets\Plugins\FMOD\src\Runtime\RuntimeManager.cs" initialLine="936">
+            <startOffsets>
+              <option value="36699" />
+            </startOffsets>
+            <endOffsets>
+              <option value="36724" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/CheckMaterial.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Users\lbondi7\source\repos\GRD_Unity_Rain\Assets\CheckMaterial.cs" initialLine="42">
+            <startOffsets>
+              <option value="975" />
+            </startOffsets>
+            <endOffsets>
+              <option value="993" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

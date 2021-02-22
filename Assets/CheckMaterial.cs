@@ -31,12 +31,19 @@ public class CheckMaterial : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        List<ParticleCollisionEvent> collision;
-
+        var droplets = GetComponent<DropletAudio>();
+        List<ParticleCollisionEvent> collision = new List<ParticleCollisionEvent>();
+        int amount = ps.GetCollisionEvents(other, collision);
         var mat = other.GetComponent<MaterialData>();
-        if (mat)
+        // if (mat)
+        // {
+        //     materialsData.Add(mat);
+        // }
+        int i = 0;
+        while (i < amount)
         {
-            materialsData.Add(mat);
+            droplets.PlaySound(collision[i].intersection, mat.ID);
+            i++;
         }
     }
 }
