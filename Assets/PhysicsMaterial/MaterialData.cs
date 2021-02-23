@@ -7,7 +7,7 @@ public class MaterialData : MonoBehaviour
 {
     private List<string> materialName = new List<string>();
     private List<Color> materialColours = new List<Color>();
-    [SerializeField] [Range(0, 3)] private int id = 0;
+    [SerializeField] [Range(0, 4)] private int id = 0;
     [SerializeField] private bool simulateWetness = true;
     [SerializeField] [Range(0.0f, 1.0f)] private float wetness = 0.9f;
     [SerializeField] [Range(0.0f, 1.0f)] private float roughness = 0.0f;
@@ -40,13 +40,14 @@ public class MaterialData : MonoBehaviour
         materialName.Add("Wood");
         materialName.Add("Rock");
         materialName.Add("Grass");
+        materialName.Add("Water");
         materialName.Add("Ice");
 
         materialColours.Add(GetColourNorm(242, 113, 58));
         materialColours.Add(GetColourNorm(122, 58, 9));
         materialColours.Add(GetColourNorm(87, 179, 7));
-        materialColours.Add(GetColourNorm(191, 224, 224));
         materialColours.Add(GetColourNorm(40, 90, 120));
+        materialColours.Add(GetColourNorm(191, 224, 224));
         AddDependencies();
     }
 

@@ -43,6 +43,9 @@ public class DropletAudio : MonoBehaviour
             case 2:
                 mat = Grass;
                 break;
+            case 3:
+                mat = Water;
+                break;
             default:
                 mat = "event:/Impacts/Grass";
                 break;

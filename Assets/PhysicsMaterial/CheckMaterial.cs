@@ -45,7 +45,7 @@ public class CheckMaterial : MonoBehaviour
             if(mat.SimulateWetness) 
                 mat.Wetness = Mathf.Clamp(mat.Wetness += 0.01f, 0.0f, 1.0f);
             
-            droplets.PlaySound(collision[i].intersection, mat.ID);
+            droplets.PlaySound(collision[i].intersection, Mathf.Clamp(mat.ID, 0, 3));
             i++;
         }
         
