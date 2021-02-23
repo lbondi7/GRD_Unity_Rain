@@ -123,6 +123,26 @@ MonoBehaviour:
     data1: 3482860566
     data2: 1567035890
   Exists: 1
+--- !u!114 &-8493953752664872500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wood/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8408387676202564846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,8 +288,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 482049135231269633}
-  - {fileID: 1689005594796304650}
+  - {fileID: 8928108422575250013}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -513,8 +532,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -6394885756772748755}
-  - {fileID: 8616636967230976012}
+  - {fileID: -8493953752664872500}
   MinDistance: 4
   MaxDistance: 100
   Length: 0
@@ -578,6 +596,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-7361454812900472789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impacts/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7300893835647492855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,9 +656,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -2855590136430049671}
-  - {fileID: 612335966586065883}
-  - {fileID: -892987832338308605}
+  - {fileID: -7361454812900472789}
+  - {fileID: -5740820986525161798}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1227,6 +1264,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-5740820986525161798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Impacts/Materials
+  m_EditorClassIdentifier: 
+  Name: Materials
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-5528945282175329197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1527,7 +1584,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -6437625184888544781}
+  - {fileID: 7128092495470595937}
   MinDistance: 1
   MaxDistance: 10000
   Length: 352
@@ -1954,6 +2011,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-4197779277709380303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Water/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-4012990057689866428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1988,7 +2065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD Unity Rain/Build/Desktop/Master.bank
   Name: Master
-  lastModified: 637496750060775851
+  lastModified: 637496791089270803
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2618,8 +2695,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -7300893835647492855}
-  - {fileID: 3820214140479490863}
+  - {fileID: -4197779277709380303}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -2963,6 +3039,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-1020876245015055699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Rock/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-999285324754006350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3043,6 +3139,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-813404279348785248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Rock/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-741586076966253833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3484,13 +3600,15 @@ MonoBehaviour:
   - {fileID: 6246193583474443453}
   - {fileID: -2183118866899768027}
   - {fileID: 3337834650350671780}
+  - {fileID: 3554496798648648144}
   EditorParameters:
   - {fileID: -8502659362231229271}
+  - {fileID: 4727536148094751889}
   MasterBanks:
   - {fileID: -3883865091870271281}
   StringsBanks:
   - {fileID: 3289305363498789325}
-  stringsBankWriteTime: 637496750060516541
+  stringsBankWriteTime: 637496791089081323
   cacheVersion: 5
 --- !u!114 &43832550671755481
 MonoBehaviour:
@@ -3865,6 +3983,26 @@ MonoBehaviour:
   m_Name: parameter:/Water/Wetness
   m_EditorClassIdentifier: 
   Name: Wetness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &884875130812335176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Grass/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
   Min: 0
   Max: 1
   Default: 0
@@ -4272,8 +4410,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -382006877533931709}
-  - {fileID: -6373144923119051289}
+  - {fileID: 884875130812335176}
   MinDistance: 4
   MaxDistance: 100
   Length: 0
@@ -4317,6 +4454,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &2152188040256743673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Water/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &2210669547207834372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4414,7 +4571,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -3883865091870271281}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
@@ -4560,8 +4717,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 6077446865109990844}
-  - {fileID: 622136584917648760}
+  - {fileID: 2152188040256743673}
   MinDistance: 4
   MaxDistance: 100
   Length: 0
@@ -4639,11 +4795,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD Unity Rain/Build/Desktop/Master.strings.bank
   Name: Master.strings
-  lastModified: 637496750060516541
+  lastModified: 637496791089081323
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2036
+    Value: 2132
   Exists: 1
 --- !u!114 &3337834650350671780
 MonoBehaviour:
@@ -4665,8 +4821,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -3067482154594281514}
-  - {fileID: -509734189850849368}
+  - {fileID: -1020876245015055699}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -4770,6 +4925,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &3554496798648648144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rain/Rainfall for Lewis
+  m_EditorClassIdentifier: 
+  Path: event:/Rain/Rainfall for Lewis
+  guid: c990bdbc4d328f44a1904cc876ce0c57
+  Banks:
+  - {fileID: -3883865091870271281}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 40000
 --- !u!114 &3754844548877964882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4976,6 +5154,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12500
+--- !u!114 &4727536148094751889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wetness
+  m_EditorClassIdentifier: 
+  Name: Wetness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3616429325
+    data2: 2322180216
+  Exists: 1
 --- !u!114 &4820298304730638352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5479,8 +5677,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 6814457215677011994}
-  - {fileID: 6577471939578779618}
+  - {fileID: 8587691713352241095}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -5804,6 +6001,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &7128092495470595937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TEST/testparam
+  m_EditorClassIdentifier: 
+  Name: testparam
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &7129557581996919917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6164,8 +6381,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 8863622644143572284}
-  - {fileID: 2563302990969278628}
+  - {fileID: -813404279348785248}
   MinDistance: 4
   MaxDistance: 100
   Length: 0
@@ -6309,6 +6525,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &8587691713352241095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Grass/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &8616636967230976012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6400,6 +6636,26 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Impacts/Thickness
+  m_EditorClassIdentifier: 
+  Name: Thickness
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &8928108422575250013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wood/Thickness
   m_EditorClassIdentifier: 
   Name: Thickness
   Min: 0

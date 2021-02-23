@@ -542,6 +542,7 @@
               <e p="{9d1ad3b8-da81-4e75-aaee-c3f37159775c}.xml" t="Include" />
               <e p="{ab46945e-be1f-40de-be24-ad154244e5fa}.xml" t="Include" />
               <e p="{aecee45c-296c-40cb-b6f0-b76967523b74}.xml" t="Include" />
+              <e p="{bcbd90c9-324d-448f-a190-4cc876ce0c57}.xml" t="Include" />
               <e p="{e7cdab76-f242-490b-a25b-da3820454bc5}.xml" t="Include" />
               <e p="{e9f358a8-0d8e-48aa-8f0f-892bf049bec6}.xml" t="Include" />
               <e p="{f03d0411-6fc0-468a-a2c6-65c54aae1d22}.xml" t="Include" />
@@ -568,6 +569,8 @@
               <e p="{1f1ad685-c9e8-4019-9ce5-20b6b39b4723}.xml" t="Include" />
               <e p="{3d04d144-f9b1-48b2-898f-450e80b71baa}.xml" t="Include" />
               <e p="{5a2a8764-7d23-4ab3-9560-3239918cd44f}.xml" t="Include" />
+              <e p="{66172290-f824-403d-b9ea-7ba47770b039}.xml" t="Include" />
+              <e p="{6ce6751c-a6f4-4ffc-82f9-fbb96934b6bc}.xml" t="Include" />
               <e p="{87d5b073-38ca-4135-8b6f-099f3520a589}.xml" t="Include" />
               <e p="{bcfcb0d5-a9b0-46e7-8535-8ffa6862937d}.xml" t="Include" />
               <e p="{bd53c367-caa5-495e-90b7-23c9adb78729}.xml" t="Include" />
@@ -605,6 +608,7 @@
         </e>
         <e p="Oneshottest.cs" t="Include" />
         <e p="PhysicsMaterial" t="Include">
+          <e p="AddForce.cs" t="Include" />
           <e p="CheckMaterial.cs" t="Include" />
           <e p="Friction.cs" t="Include" />
           <e p="MaterialData.cs" t="Include" />

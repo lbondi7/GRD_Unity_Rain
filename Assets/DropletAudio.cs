@@ -38,7 +38,7 @@ public class DropletAudio : MonoBehaviour
                 mat = Wood;
                 break;
             case 1:
-                mat = Water;
+                mat = Rock;
                 break;
             case 2:
                 mat = Grass;

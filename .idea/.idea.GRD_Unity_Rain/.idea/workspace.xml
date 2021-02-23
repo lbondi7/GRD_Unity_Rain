@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f61d5339-50c3-40cc-af8a-a5f4bd901f46" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterial/CheckMaterial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PhysicsMaterial/CheckMaterial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DropletAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DropletAudio.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterial/MaterialData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PhysicsMaterial/MaterialData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RainControls/Physical Rain Mk2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RainControls/Physical Rain Mk2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RainControls/Physical Rain.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RainControls/Physical Rain.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Materials/Ground.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PhysicalRain.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PhysicalRain.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PhysicsMaterial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PhysicsMaterial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +39,15 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/6b/36315a65/ScriptableRuntimeReflectionSystemWrapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82EC470C-9131-4935-8AD0-C83AD628910C/07/3c354731/RenderPipelineManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PhysicsMaterial/AddForce.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/CheckMaterial.cs" />
-        <option value="$PROJECT_DIR$/Assets/DropletAudio.cs" />
         <option value="$PROJECT_DIR$/Assets/PhysicsMaterial/CheckMaterial.cs" />
+        <option value="$PROJECT_DIR$/Assets/DropletAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/PhysicsMaterial/AddForce.cs" />
         <option value="$PROJECT_DIR$/Assets/PhysicsMaterial/MaterialData.cs" />
       </list>
     </option>
@@ -79,7 +97,7 @@
       <updated>1614013820926</updated>
       <workItem from="1614013821805" duration="4930000" />
       <workItem from="1614028928878" duration="1998000" />
-      <workItem from="1614073139203" duration="7048000" />
+      <workItem from="1614073139203" duration="8493000" />
     </task>
     <servers />
   </component>
@@ -88,6 +106,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

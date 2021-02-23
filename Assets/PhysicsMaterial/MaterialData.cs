@@ -7,7 +7,7 @@ public class MaterialData : MonoBehaviour
 {
     private List<string> materialName = new List<string>();
     private List<Color> materialColours = new List<Color>();
-    [SerializeField] [Range(0, 2)] private int id = 0;
+    [SerializeField] [Range(0, 3)] private int id = 0;
     [SerializeField] private bool simulateWetness = true;
     [SerializeField] [Range(0.0f, 1.0f)] private float wetness = 0.9f;
     [SerializeField] [Range(0.0f, 1.0f)] private float roughness = 0.0f;
@@ -38,11 +38,13 @@ public class MaterialData : MonoBehaviour
     void Start()
     {
         materialName.Add("Wood");
-        materialName.Add("Water");
+        materialName.Add("Rock");
         materialName.Add("Grass");
+        materialName.Add("Ice");
 
         materialColours.Add(GetColourNorm(242, 113, 58));
         materialColours.Add(GetColourNorm(122, 58, 9));
+        materialColours.Add(GetColourNorm(87, 179, 7));
         materialColours.Add(GetColourNorm(87, 179, 7));
         AddDependencies();
     }
@@ -52,11 +54,14 @@ public class MaterialData : MonoBehaviour
     {
         if(prevID != id)
             AddDependencies();
-        
-        timeSinceLastWetness = Mathf.Clamp(timeSinceLastWetness - Time.deltaTime, 0.0f, 60.0f);
-        if (timeSinceLastWetness <= 0.0f)
+
+        if (simulateWetness)
         {
-            wetness = Mathf.Clamp(wetness - Time.deltaTime * dryingTimeMultiplier, 0.0f, 1.0f);
+            timeSinceLastWetness = Mathf.Clamp(timeSinceLastWetness - Time.deltaTime, 0.0f, 60.0f);
+            if (timeSinceLastWetness <= 0.0f)
+            {
+                wetness = Mathf.Clamp(wetness - Time.deltaTime * dryingTimeMultiplier, 0.0f, 1.0f);
+            }
         }
     }
 
