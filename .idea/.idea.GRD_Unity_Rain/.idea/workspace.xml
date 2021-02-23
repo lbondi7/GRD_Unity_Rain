@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f61d5339-50c3-40cc-af8a-a5f4bd901f46" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GRD_Unity_Rain/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DropletAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DropletAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterial/MaterialData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PhysicsMaterial/MaterialData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Cache/Editor/FMODStudioCache.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PhysicsMaterial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PhysicsMaterial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fmod_editor.log" beforeDir="false" afterPath="$PROJECT_DIR$/fmod_editor.log" afterDir="false" />
-    </list>
+    <list default="true" id="f61d5339-50c3-40cc-af8a-a5f4bd901f46" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +89,7 @@
       <updated>1614013820926</updated>
       <workItem from="1614013821805" duration="4930000" />
       <workItem from="1614028928878" duration="1998000" />
-      <workItem from="1614073139203" duration="8493000" />
+      <workItem from="1614073139203" duration="9017000" />
     </task>
     <servers />
   </component>

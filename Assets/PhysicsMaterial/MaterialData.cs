@@ -45,7 +45,8 @@ public class MaterialData : MonoBehaviour
         materialColours.Add(GetColourNorm(242, 113, 58));
         materialColours.Add(GetColourNorm(122, 58, 9));
         materialColours.Add(GetColourNorm(87, 179, 7));
-        materialColours.Add(GetColourNorm(87, 179, 7));
+        materialColours.Add(GetColourNorm(191, 224, 224));
+        materialColours.Add(GetColourNorm(40, 90, 120));
         AddDependencies();
     }
 
