@@ -1,96 +1,93 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
+using UnityEditor.SceneManagement;
 
-public class WettableSurface : MonoBehaviour
+public class WettableSurface : WettableObject
 {
-    // TODO: Make new function that goes in reverse to make object "Drier" over time.
-    public WettableSurface()
-    {
-        this.wetness = 0;
-        this.wetnessThresholds = new List<int>();
-        this.baseReflectiveness = 0;
-        this.wetReflectiveness = new List<float>();
-    }
-    public WettableSurface(int _wetness,
-                    List<int> _wetnessThresholds,
-                    Material _material,
-                    float _baseReflectiveness,
-                    List<float> _wetReflectiness)
-    {
-        this.wetness = _wetness;
-        this.wetnessThresholds = _wetnessThresholds;
-        this.material = _material;
-        this.baseReflectiveness = _baseReflectiveness;
-        this.wetReflectiveness = _wetReflectiness;
-    }
-
-    /* Amount of frames the object has been under rain */
-    [SerializeField] protected int wetness;
-
-    /* How wet the object needs to be to trigger a change */
-    [SerializeField] protected List<int> wetnessThresholds = new List<int>();
-
-    [SerializeField] protected Material material;
+  
 
     /* How reflective the object is at the start. */
-    [SerializeField] protected float baseReflectiveness;
+    protected float baseReflectiveness;
     /* How reflective the object will get at each stage of wetness. 1-1000. */
-    [SerializeField] protected List<float> wetReflectiveness = new List<float>();
+    public List<float> thresholdReflectiveness = new List<float>();
+    public bool reflectionsUsed;
+    public bool fadingUsed;
+    [HideInInspector] public WetnessState fadingTrigger;
+    [HideInInspector] public float fadingSpeedMultiplier;
+    public List<float> thresholdVisibility = new List<float>();
+    public float outOfRainFadeStrength;
+    public float submergedFadeStrength;
 
-    [SerializeField] private int wetnessState = 0;
-    private float rainLerp;
-
-
-    protected void InitWetObject()
+    void Start()
     {
-        material = GetComponent<Renderer>().material;
     }
 
-    private void OnParticleCollision(GameObject other)
+    override protected void ApplyRainEffect()
     {
-        if (wetnessState != wetnessThresholds.Count)
+        if (!baseMaterial) baseMaterial =GetComponent<Renderer>().material;
+        baseMaterial.SetFloat("_Metallic", (thresholdReflectiveness[currentWetnessLevel] / 1000));
+        baseMaterial.SetFloat("_Glossiness", (thresholdReflectiveness[currentWetnessLevel] / 1000));
+
+        if (fadingUsed)
         {
-            DetectRainConditions(other);
+            FadeOnConditions();
         }
     }
-    
-    private void DetectRainConditions(GameObject _pSys)
-    {
-        if (_pSys.CompareTag("Rain"))
-        {
-            ++wetness;
-            if (wetness > wetnessThresholds[wetnessThresholds.Count-1])
-                wetness = wetnessThresholds[wetnessThresholds.Count - 1];
 
-            for (int i = 0; i < wetnessThresholds.Count; i++)
-            {
-                if (wetness == wetnessThresholds[i])
+    void FadeOnConditions()
+    {
+        switch (fadingTrigger)
+        {
+            case WetnessState.OutOfRain:
+                if (CurrentWetState == WetnessState.OutOfRain)
                 {
-                    //rainLerp = 0.1f;
-                    if (wetnessState < wetnessThresholds.Count - 1)
-                        wetnessState = i;
+                    StartCoroutine(Fade(outOfRainFadeStrength, 1 * fadingSpeedMultiplier));
+                    break;
                 }
-            }
-            ApplyRainEffect();
-        }
-    }
+                else
+                {
+                    if (faded)
+                        StartCoroutine(FadeIn(1 * fadingSpeedMultiplier));
+                    break;
+                }
+            case WetnessState.InRain:
+                if (CurrentWetState == WetnessState.InRain)
+                {
+                    StartCoroutine(Fade(thresholdVisibility[currentWetnessLevel], 1 * fadingSpeedMultiplier));
 
-    protected virtual void ApplyRainEffect()
-    {
-        material.SetFloat("_Metallic", (wetReflectiveness[wetnessState] / 1000));
-        material.SetFloat("_Glossiness", (wetReflectiveness[wetnessState] / 1000));
-        //rainLerp++;
-        //if (wetnessState == wetnessThresholds.Count - 1)
-        //{
-        //    material.SetFloat("_Metallic", wetReflectiveness[wetnessState] / 1000);
-        //    return;
-        //}
-        //var p1 = wetReflectiveness[wetnessState];
-        //var p2 = wetReflectiveness[wetnessState + 1];
-        //var x = (Mathf.Lerp(p1,p2, Time.deltaTime / rainLerp) / 1000);
-        //print(x);
-        //material.SetFloat("_Metallic", x);
-               
+                    break;
+                }
+                else if (CurrentWetState == WetnessState.FullyWet)
+                {
+                    StartCoroutine(Fade(thresholdVisibility[thresholdVisibility.Count-1], 1 * fadingSpeedMultiplier));
+                    break;
+                }
+                else
+                {
+                    if (faded)
+                        StartCoroutine(FadeIn(1 * fadingSpeedMultiplier));
+                    break;
+                }
+            case WetnessState.FullyWet:
+                if (CurrentWetState == WetnessState.FullyWet)
+                {
+                    if (submergedFadeStrength == 100)
+                        StartCoroutine(FadeOut(1 * fadingSpeedMultiplier));
+                    else
+                    {
+                        StartCoroutine(Fade(submergedFadeStrength, 1 * fadingSpeedMultiplier));
+                    }
+                    break;
+                }
+                else
+                {
+                    if (faded)
+                    StartCoroutine(FadeIn(1 * fadingSpeedMultiplier));
+                    break;
+                }
+        }
     }
 }
+
