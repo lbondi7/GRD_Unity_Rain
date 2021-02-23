@@ -13,6 +13,36 @@ public class PhysicalRain : BasicRain
     [Header("Active Range")]
     [Range(10, 50)]
     public int ActiveRange = 15;
+    [Header("Entity Speed Reduction")]
+    [Range(0.1f, 0.75f)]
+    public float SpeedReduction = 0.5f;
+
+    Collider triggerVolume;
+
+    private void Awake()
+    {
+        float groundDistance = 4;
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position,Vector3.down,out hit))
+        {
+            groundDistance = hit.distance;
+        }
+        if (!GetComponent<Collider>())
+        {
+            triggerVolume = gameObject.AddComponent<BoxCollider>();
+            triggerVolume.bounds.center.Set(0, 0, 1);
+            triggerVolume.bounds.size.Set(RainSize, RainSize, groundDistance + 1);
+            triggerVolume.isTrigger = true;
+        }
+        else
+        {
+            triggerVolume = GetComponent<Collider>();
+            if (!triggerVolume.isTrigger)
+            {
+                triggerVolume.isTrigger = true;
+            }
+        }
+    }
 
     private void Update()
     {
@@ -38,6 +68,26 @@ public class PhysicalRain : BasicRain
         rain.startLifetime = Lifetime;
         rainPhysics.maxKillSpeed = transform.position.y + 3;
         base.OnValidate();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerControls>().amWet = true;
+            other.gameObject.GetComponent<PlayerControls>().speedModifier = SpeedReduction;
+            other.GetComponent<PlayerControls>().getPlayerCam().cullingMask += (1 << LayerMask.NameToLayer("Waterlogged"));
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerControls>().amWet = false;
+            other.gameObject.GetComponent<PlayerControls>().speedModifier = 1;
+            other.GetComponent<PlayerControls>().getPlayerCam().cullingMask = ~(1 << LayerMask.NameToLayer("Waterlogged"));
+        }
     }
 
 }

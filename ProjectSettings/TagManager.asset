@@ -10,13 +10,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Rain Effect
   - Water
   - UI
   - Ground
   - Surface
   - Pooling Area
-  - 
+  - Waterlogged
   - 
   - 
   - 
@@ -42,4 +42,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Camera Effect
+    uniqueID: 286644543
     locked: 0

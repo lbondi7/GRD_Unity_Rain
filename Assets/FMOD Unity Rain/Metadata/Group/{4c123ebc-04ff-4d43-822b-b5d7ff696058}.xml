@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="MixerGroup" id="{4c123ebc-04ff-4d43-822b-b5d7ff696058}">
+		<property name="name">
+			<value>Open Sweetener</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{06fac374-daab-4b20-8714-f8ad9e3616a4}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{60f49a44-95b8-4cac-9dcb-fd4ebb6a66d7}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{5b11b690-8b4d-4ed1-b420-a28636e98b55}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{06fac374-daab-4b20-8714-f8ad9e3616a4}">
+		<relationship name="effects">
+			<destination>{a7dbb53f-5066-452b-a980-32f3d25c7eba}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{60f49a44-95b8-4cac-9dcb-fd4ebb6a66d7}" />
+	<object class="MixerBusFader" id="{a7dbb53f-5066-452b-a980-32f3d25c7eba}" />
+</objects>
