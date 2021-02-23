@@ -26,6 +26,6 @@ public class DropletAudio : MonoBehaviour
     void PlaySound()
     {
         Vector3 newPos = new Vector3(7.78f, 11.68f, -5.5f);
-        FMODUnity.RuntimeManager.PlayOneShot(Material, newPos);
+        FMODUnity.RuntimeManager.PlayOneShot(Rock, newPos);
     }
 }
