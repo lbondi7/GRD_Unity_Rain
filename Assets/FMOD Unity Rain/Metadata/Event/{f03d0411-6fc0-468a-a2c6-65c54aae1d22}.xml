@@ -35,6 +35,7 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{109f1166-b848-48ce-a89d-c37595ce3ed7}</destination>
+			<destination>{a4c96f66-27ef-4d97-9c10-75a317c4852c}</destination>
 		</relationship>
 		<relationship name="banks">
 			<destination>{204a15d5-082d-4411-bb6d-80a74f75d37a}</destination>
@@ -58,7 +59,7 @@
 			<destination>{40b31e7e-383a-4490-9a84-454745d43656}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{5b11b690-8b4d-4ed1-b420-a28636e98b55}</destination>
+			<destination>{622d2abd-3b82-4d6f-bde4-3574f706c244}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{320851b8-7a39-44fb-845d-bf1dcd874d2d}" />
@@ -109,6 +110,11 @@
 	<object class="ParameterProxy" id="{109f1166-b848-48ce-a89d-c37595ce3ed7}">
 		<relationship name="preset">
 			<destination>{8c7c9ee3-b6f6-4ed5-bdb7-1f5161c553ba}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{a4c96f66-27ef-4d97-9c10-75a317c4852c}">
+		<relationship name="preset">
+			<destination>{de5ffc15-2d63-4adb-9bba-d5469ee20e50}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{2d305317-f047-47d3-aaa3-35c3898c11c4}">
@@ -317,7 +323,6 @@
 			<destination>{8c7c9ee3-b6f6-4ed5-bdb7-1f5161c553ba}</destination>
 		</relationship>
 		<relationship name="automationPoints">
-			<destination>{55be20fc-af0e-46a7-8265-917ff28eae37}</destination>
 			<destination>{13962989-733e-4be9-9ffe-b8b873f17d1e}</destination>
 			<destination>{02b0308d-98c1-4292-a897-35ed2d1947d4}</destination>
 			<destination>{ebc6c8db-ea76-4866-9e0b-f49f23d69fbb}</destination>
@@ -368,14 +373,6 @@
 		</property>
 		<property name="value">
 			<value>0</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{55be20fc-af0e-46a7-8265-917ff28eae37}">
-		<property name="position">
-			<value>0</value>
-		</property>
-		<property name="value">
-			<value>-80</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{13962989-733e-4be9-9ffe-b8b873f17d1e}">

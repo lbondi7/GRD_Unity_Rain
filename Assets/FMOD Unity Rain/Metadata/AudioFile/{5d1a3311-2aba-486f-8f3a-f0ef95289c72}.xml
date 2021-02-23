@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{5d1a3311-2aba-486f-8f3a-f0ef95289c72}">
+		<property name="assetPath">
+			<value>Drip/Wood/Medium wood light 13.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.35770833333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59b6324f-11e1-40bf-8bcc-4ae4b147a3ba}</destination>
+		</relationship>
+	</object>
+</objects>

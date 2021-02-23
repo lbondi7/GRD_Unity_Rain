@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{5bfe78d6-f986-4886-b117-f2a3faf2efa4}">
 		<property name="assetPath">
-			<value>Rain loopable.wav</value>
+			<value>Rain Atmos/Rain loopable.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
