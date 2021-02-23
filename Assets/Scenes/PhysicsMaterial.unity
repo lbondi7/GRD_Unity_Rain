@@ -161,6 +161,7 @@ MonoBehaviour:
   thiccness: 0.35
   timeSinceLastWetness: 60
   dryingTimeMultiplier: 3
+  simulateWetness: 1
 --- !u!65 &393455099
 BoxCollider:
   m_ObjectHideFlags: 0

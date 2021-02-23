@@ -280,7 +280,6 @@
         <e p="3rdPersonCharacter" t="Include">
           <e p="PlayerControls.cs" t="Include" />
         </e>
-        <e p="CheckMaterial.cs" t="Include" />
         <e p="DropletAudio.cs" t="Include" />
         <e p="EffectExamples" t="Include">
           <e p="Magic Effects" t="Include">
@@ -606,6 +605,7 @@
         </e>
         <e p="Oneshottest.cs" t="Include" />
         <e p="PhysicsMaterial" t="Include">
+          <e p="CheckMaterial.cs" t="Include" />
           <e p="Friction.cs" t="Include" />
           <e p="MaterialData.cs" t="Include" />
         </e>

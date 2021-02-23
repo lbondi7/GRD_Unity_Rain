@@ -41,17 +41,14 @@ public class DropletAudio : MonoBehaviour
                 mat = Rock;
                 break;
             case 2:
-                mat = Water;
-                break;
-            case 3:
                 mat = Grass;
                 break;
             default:
-                mat = "none";
+                mat = "Water";
                 break;
         }
 
-        if (mat != "none")
+        if (!mat.Contains("Water"))
         {
             FMODUnity.RuntimeManager.PlayOneShot(mat, pos);
             Debug.Log("Sound");
