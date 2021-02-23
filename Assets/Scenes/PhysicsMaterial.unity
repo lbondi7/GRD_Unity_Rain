@@ -156,12 +156,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  wetness: 0
+  simulateWetness: 1
+  wetness: 0.47
   roughness: 0
   thiccness: 0.35
-  timeSinceLastWetness: 60
+  timeSinceLastWetness: 60.6
   dryingTimeMultiplier: 3
-  simulateWetness: 1
 --- !u!65 &393455099
 BoxCollider:
   m_ObjectHideFlags: 0

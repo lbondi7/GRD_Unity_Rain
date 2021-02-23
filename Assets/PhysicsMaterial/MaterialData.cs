@@ -8,13 +8,13 @@ public class MaterialData : MonoBehaviour
     private List<string> materialName = new List<string>();
     private List<Color> materialColours = new List<Color>();
     [SerializeField] [Range(0, 2)] private int id = 0;
+    [SerializeField] private bool simulateWetness = true;
     [SerializeField] [Range(0.0f, 1.0f)] private float wetness = 0.9f;
     [SerializeField] [Range(0.0f, 1.0f)] private float roughness = 0.0f;
     [SerializeField] [Range(0.0f, 1.0f)] private float thiccness = 0.9f;
     [SerializeField] private float timeSinceLastWetness = 60.0f;
     [SerializeField] private float dryingTimeMultiplier = 3.0f;
-    [SerializeField] private bool simulateWetness = true;
-    
+
 
     public int ID { get => id; }
     public float Wetness { 
@@ -27,7 +27,12 @@ public class MaterialData : MonoBehaviour
         get => timeSinceLastWetness;
         set => timeSinceLastWetness = value;
     }
-    
+
+    public bool SimulateWetness
+    {
+        get => simulateWetness; 
+    }
+
     private int prevID = 0;
     // Start is called before the first frame update
     void Start()

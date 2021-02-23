@@ -36,14 +36,12 @@ public class CheckMaterial : MonoBehaviour
         int amount = ps.GetCollisionEvents(other, collision);
         var mat = other.GetComponent<MaterialData>();
         mat.TimeSinceLastWetness = 60.0f;
-        // if (mat)
-        // {
-        //     materialsData.Add(mat);
-        // }
         int i = 0;
         while (i < amount)
         {
-            mat.Wetness = Mathf.Clamp(mat.Wetness += 0.01f, 0.0f, 1.0f);
+            if(mat.SimulateWetness) 
+                mat.Wetness = Mathf.Clamp(mat.Wetness += 0.01f, 0.0f, 1.0f);
+            
             droplets.PlaySound(collision[i].intersection, mat.ID);
             i++;
         }
