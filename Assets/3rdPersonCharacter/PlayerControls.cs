@@ -9,15 +9,25 @@ public class PlayerControls : MonoBehaviour
     Vector2 look;
     Animator playerAnimator;
     GameObject playerCameraObj;
+
     public Transform playerRoot;
 
+    public bool amWet;
+    public float speedModifier = 1;
     bool amCrouching = false;
+    List<ParticleSystem> rainEffects = new List<ParticleSystem>();
+
 
     // Start is called before the first frame update
     void Start()
     {
         playerAnimator = GetComponent<Animator>();
         playerCameraObj = GetComponentInChildren<Camera>().gameObject;
+        var rainBits = GetComponentsInChildren<ParticleSystem>();
+        foreach (var item in rainBits)
+        {
+            rainEffects.Add(item);
+        }
     }
 
     // Update is called once per frame
@@ -29,8 +39,25 @@ public class PlayerControls : MonoBehaviour
     {
         playerCameraObj.transform.RotateAround
             (playerRoot.position, Vector3.up, look.x / 1.5f);
-        playerAnimator.SetFloat("Turn", move.x);
-        playerAnimator.SetFloat("Forward", move.y);
+        if (amWet)
+        {
+            playerAnimator.SetFloat("Turn", move.x * speedModifier);
+            playerAnimator.SetFloat("Forward", move.y * speedModifier);
+            foreach (var item in rainEffects)
+            {
+                item.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            playerAnimator.SetFloat("Turn", move.x);
+            playerAnimator.SetFloat("Forward", move.y);
+            foreach (var item in rainEffects)
+            {
+                item.gameObject.SetActive(false);
+            }
+        }
+
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -61,6 +88,11 @@ public class PlayerControls : MonoBehaviour
         {
             playerAnimator.SetBool("Crouch", false);
         }
+    }
+
+    public Camera getPlayerCam() 
+    {
+        return playerCameraObj.GetComponent<Camera>();
     }
 
 

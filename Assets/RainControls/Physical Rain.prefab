@@ -53,6 +53,7 @@ MonoBehaviour:
   Intensity: 250
   Lifetime: 60
   ActiveRange: 15
+  SpeedReduction: 0.5
 --- !u!198 &4534019319166607969
 ParticleSystem:
   m_ObjectHideFlags: 0
