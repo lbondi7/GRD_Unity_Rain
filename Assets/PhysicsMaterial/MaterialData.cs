@@ -38,7 +38,7 @@ public class MaterialData : MonoBehaviour
     void Start()
     {
         materialName.Add("Wood");
-        materialName.Add("Rock");
+        materialName.Add("Water");
         materialName.Add("Grass");
 
         materialColours.Add(GetColourNorm(242, 113, 58));
@@ -79,7 +79,10 @@ public class MaterialData : MonoBehaviour
         {
             gameObject.AddComponent<MeshRenderer>();
         }
-        var mat = GetComponent<MeshRenderer>().material = Resources.Load<Material>("Materials/Ground");
+        if(!GetComponent<Renderer>().material)
+            GetComponent<Renderer>().material = new Material(Shader.Find("Standard"));
+        
+        var mat = GetComponent<MeshRenderer>().material;
         mat.color = materialColours[Mathf.Clamp(id, 0, materialColours.Count - 1)];
         GetComponent<MeshRenderer>().material = mat;
         prevID = id;

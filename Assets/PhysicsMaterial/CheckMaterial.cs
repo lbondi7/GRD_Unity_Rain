@@ -31,6 +31,9 @@ public class CheckMaterial : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        if (!other.GetComponent<MaterialData>() || !ps)
+            return;
+
         var droplets = GetComponent<DropletAudio>();
         List<ParticleCollisionEvent> collision = new List<ParticleCollisionEvent>();
         int amount = ps.GetCollisionEvents(other, collision);
